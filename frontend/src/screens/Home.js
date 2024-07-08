@@ -20,7 +20,7 @@ const Home = () => {
     useEffect(()=>{
       const token=localStorage.getItem("jwt")
       if(!token){
-        navigate("/");
+        navigate("/signup");
       }
       fetch(`${burl}/allposts`,{
          headers:{
